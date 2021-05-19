@@ -1,10 +1,39 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.min.js"></script>
-    <script src="animate.js"></script>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <main>
+    
+    <label class="container">Fan 1
+      <input id="fan1" value="0" type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+    <div id="vel1">
+    <label class="container" style="opacity: 0;" >Fan 1 X Velocity
+      <input id="fan1_u" value="0" type="number" style="opacity: 0;">
+    </label>
+    <label class="container">Fan 1 Y Velocity
+      <input id="fan1_v" value="0" type="number">
+    </label>
+  </div>
+    <label class="container">Fan 2
+      <input id="fan2" value="0" type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+    <div id="vel2">
+    <label class="container" style="opacity: 0;">Fan 2 X Velocity
+      <input id="fan2_u" value="0" type="number">
+    </label>
+    <label class="container" style="opacity: 0;">Fan 2 Y Velocity
+      <input id="fan2_v" value="0" type="number">
+    </label>
+  </div>
+    <button id="start">Start</button>
+    <main id="canvas">
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.min.js"></script>
+    <script src="animate.js"></script>
+    
   </body>
 </html>
